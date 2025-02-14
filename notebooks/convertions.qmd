@@ -1,0 +1,20 @@
+---
+title: "Conversions"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+```{python}
+import os 
+os.chdir("..")
+```
+
+```{python}
+import polars as pl
+```
+
+```{python}
+pl.read_excel("datasets/fsdc/fsdc_nutrition_matrix.xls").write_csv("datasets/fsdc/fsdc_nutrition_matrix.csv")
+```
